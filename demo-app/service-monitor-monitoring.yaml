@@ -1,0 +1,15 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: demo-app-monitor2
+  labels:
+    monitoring: "true"
+spec:
+  endpoints:
+  - interval: 30s
+    port: http-port
+  selector:
+    matchLabels:
+      app: demo-app-service
+
