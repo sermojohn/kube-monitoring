@@ -1,0 +1,17 @@
+controller:
+  resources:
+    requests:
+      cpu: 100m
+      memory: 250M
+    limits:
+      cpu: 300m
+      memory: 500M
+dashboard:
+  replicaCount: 1
+  resources:
+    requests:
+      cpu: 100m
+      memory: 150M
+    limits:
+      cpu: 150m
+      memory: 200M
