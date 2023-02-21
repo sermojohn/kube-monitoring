@@ -15,3 +15,6 @@ dashboard:
     limits:
       cpu: 150m
       memory: 200M
+vpa:
+  # vpa.enabled -- If true, the vpa will be installed as a sub-chart
+  enabled: true
